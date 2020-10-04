@@ -8,7 +8,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo('Building Backend with Gradle.....')
-                sh './gradlew -v'
+                sh './gradle -v'
             }
         }
         stage('Test') {
